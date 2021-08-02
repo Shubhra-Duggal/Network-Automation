@@ -81,16 +81,7 @@ The child application is ready to talk. This does not interpret shell meta chara
 ## expect()
 
 ```python
-print('And now for something completely different...')
-print(''.join(reversed((c.before))))
-print('Yes, it\'s python, but it\'s backwards.')
-print()
-print(c.after, end=' ')
-
-c.interact()
-
-c.kill(1)
-print('is alive:', c.isalive())
+c.expect('>>>')
 ```
 expect(pattern, timeout=-1, searchwindowsize=-1, async_=False, **kw)
 
@@ -103,6 +94,16 @@ If you pass a list of patterns and more than one matches, the first match in the
 
 
 ## interact()
+```python
+print(''.join(reversed((c.before))))
+print('Output is reversed.')
+print()
+print(c.after, end=' ')
+c.interact()
+
+c.kill(1)
+print('is alive:', c.isalive())
+```
 interact(escape_character='\x1d', input_filter=None, output_filter=None)[source]
 
 Gives control of the child process to the interactive user (the human at the keyboard). Keystrokes are sent to the child process, and the stdout and stderr output of the child process is printed. 
