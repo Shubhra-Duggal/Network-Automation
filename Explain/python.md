@@ -95,13 +95,12 @@ This simply echos the child stdout and child stderr to the real stdout and it ec
 
 If a logfile is specified, then the data sent and received from the child process in interact mode is duplicated to the given log.
 
-Input and output filter functions: 
+#### Input and output filter functions
 Interact will always pass input_filter and output_filter bytes. Functions need to be wraped to decode and encode to UTF-8.
 The output_filter is passed on all the output from the child process and the  input_filter on the keyboard input. The input_filter is run BEFORE the check for the escape_character.
 
 
 ## kill()
-kill(sig):
 This sends the given signal to the child application. In keeping with UNIX tradition it has a misleading name. It does not necessarily kill the child unless you send the right signal.
 
 ---
