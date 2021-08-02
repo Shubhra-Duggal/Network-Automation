@@ -5,7 +5,7 @@ Network automation has become a necessary aspect of Software Design Networking. 
 
 ## Pexpect
 
-Pexpect is one the python modules that is used to control other applications. It 'spawns' a child application and responds to the expected pattern of queries, like a human user would do. It can be used for SSH, FTP , Telnet, etc. by automating scripts.
+Pexpect is one the python modules that is used to control other applications. It 'spawns' a child application and responds to the expected pattern of queries, like a human user would do. It can be used for SSH, FTP, Telnet, etc. by automating scripts.
 
 The use of the module has been demonstrated in following examples:
 1. [Start the interactive python interpreter.](/Explain/python.md)
