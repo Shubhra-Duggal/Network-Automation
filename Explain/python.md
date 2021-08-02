@@ -41,7 +41,7 @@ This is the main class interface for Pexpect. Use this class to start and contro
 ### spawnu
 For python3 compatibility reasons, we are using spawnu and importing unicode_literals (above). spawnu accepts Unicode input and unicode_literals makes all string literals in this script Unicode by default.
 
-### \__init\__
+### \_\_init\_\_
 __init__(command, args=[], timeout=30, maxread=2000, searchwindowsize=None, logfile=None, cwd=None, env=None, ignore_sighup=False, echo=True, preexec_fn=None, encoding=None, codec_errors='strict', dimensions=None, use_poll=False)
 
 This is a constructor. 
