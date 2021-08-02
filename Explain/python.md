@@ -24,7 +24,7 @@ c.kill(1)
 print('is alive:', c.isalive())
 ```
 
-## Shebang 
+## shebang 
 ```python
 #!/usr/bin/env python
 ```
