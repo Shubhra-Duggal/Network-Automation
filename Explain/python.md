@@ -1,7 +1,7 @@
 # Python
 
 Start the interactive python interpreter. Capture the startup message and give the user control over the session.
-The [code](Code/python.py):
+The [code](/Code/python.py):
 
 ```python
 #!/usr/bin/env python
