@@ -5,36 +5,32 @@ The [code](Code/python.py):
 
 ```python
 #!/usr/bin/env python
+```
 
+```python
 from __future__ import absolute_import
 from __future__ import print_function
 from __future__ import unicode_literals
-
-import pexpect
-
-c = pexpect.spawnu('/usr/bin/env python')
-
-c.expect('>>>')
-print(''.join(reversed((c.before))))
-print('Output is reversed.')
-print()
-print(c.after, end=' ')
-
-c.interact()
-
-c.kill(1)
-print('is alive:', c.isalive())
 ```
 
 ## \_future\_
 To ensure that future statements run under releases prior to 2.1 at least yield runtime exceptions.
-###Future Statements:
+### Future Statements:
 A directive to the compiler that a particular module should be compiled using syntax or semantics that will be available in a specified future release of Python where the feature becomes standard.
 The future statement is intended to ease migration to future versions of Python that introduce incompatible changes to the language.
 A future statement appears near the top of the module.
 All historical features enabled by the future statement are still recognized by Python 3- absolute_import, division, generators, generator_stop, unicode_literals, print_function, nested_scopes and with_statement.
 
-## pexpect.spawn:
+
+
+## pexpect.spawn
+```python
+import pexpect
+```
+
+```python
+c = pexpect.spawnu('/usr/bin/env python')
+```
 
 This is the main class interface for Pexpect. Use this class to start and control child applications.
 
@@ -46,32 +42,32 @@ __init__(command, args=[], timeout=30, maxread=2000, searchwindowsize=None, logf
 
 This is a constructor. 
 
-maxread:
+#### maxread
 It is used to set the read buffer size, which is the maximum number of bytes that will be read from TTY at once. 
 Setting it to 1 turns the buffering off.
 When the output from the child is large then the value should be set to a higher value.
 
-searchwindowsize:
+#### searchwindowsize
 Default is None. Full buffer is searched at each iteration of receiving data.
 It can be optimised (reduced) to reduce cost and increase efficiency. When expect() returns, the full buffer attribute is equal to the size of maxread irrespective of value of searchwindowsize.
 
-timeout:
+#### timeout
 Default is 30. TIMEOUT is raised when the specified time has elapsed, in seconds. If the value is None, TIMEOUT will not be raised and expect() might be blocked indefinitely until match is found.
 
-logfile:
+#### logfile
 Default is None, which stops the logging. When it is set to sys.stdout to echo everything to standard output. All input and output will be copied to the given file object. The logfile is flushed after each write.
 The logfile_read and logfile_send can be used to separately log the input from the child and output sent to the child. The input and output from the child can be separatley logged using logfile_read and logfile_send.
 
 
-delaybeforesend:
+#### delaybeforesend
 If the user expect() a 'Password:' and then calls a sendline() to send the password, then the password is echoed back to them which is not normal. Now, stdin echo is switched off after the 'Password:' prompt. If a human types in a password it is not a problem but if password is sent before stdin echo is turned off, then password is echoed back. A delay can be introduced just before sending password.
 
-close():
+#### close()
 Exit status is stored in self.exitstatus and signal is stored in self.signalstatus. For the exit status of the child, call the close() method. 
 If the child exited normally then exitstatus will store the exit return code and signalstatus will be None. 
 If the child was terminated abnormally with a signal, then signalstatus will store the signal value and exitstatus will be None.
 
-echo:
+#### echo
 It may be set to False to disable echoing of input. 
 As a pseudo-terminal, all input echoed by the “keyboard” (send() or sendline()) will be repeated to output. 
 Many times it is not desirable to have echo enabled, and it can be disabled later using setecho(False), followed by waitnoecho().
@@ -83,6 +79,19 @@ The child application is ready to talk. This does not interpret shell meta chara
 
 
 ## expect()
+
+```python
+print('And now for something completely different...')
+print(''.join(reversed((c.before))))
+print('Yes, it\'s python, but it\'s backwards.')
+print()
+print(c.after, end=' ')
+
+c.interact()
+
+c.kill(1)
+print('is alive:', c.isalive())
+```
 expect(pattern, timeout=-1, searchwindowsize=-1, async_=False, **kw)
 
 
