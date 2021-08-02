@@ -1,4 +1,4 @@
-#Python
+# Python
 
 Start the interactive python interpreter. Capture the startup message and give the user control over the session.
 The [code](Code/python.py):
@@ -26,7 +26,7 @@ c.kill(1)
 print('is alive:', c.isalive())
 ```
 
-##\_future\_
+## \_future\_
 To ensure that future statements run under releases prior to 2.1 at least yield runtime exceptions.
 ###Future Statements:
 A directive to the compiler that a particular module should be compiled using syntax or semantics that will be available in a specified future release of Python where the feature becomes standard.
@@ -34,14 +34,14 @@ The future statement is intended to ease migration to future versions of Python 
 A future statement appears near the top of the module.
 All historical features enabled by the future statement are still recognized by Python 3- absolute_import, division, generators, generator_stop, unicode_literals, print_function, nested_scopes and with_statement.
 
-##pexpect.spawn:
+## pexpect.spawn:
 
 This is the main class interface for Pexpect. Use this class to start and control child applications.
 
-###spawnu
+### spawnu
 For python3 compatibility reasons, we are using spawnu and importing unicode_literals (above). spawnu accepts Unicode input and unicode_literals makes all string literals in this script Unicode by default.
 
-###\__init\__
+### \__init\__
 __init__(command, args=[], timeout=30, maxread=2000, searchwindowsize=None, logfile=None, cwd=None, env=None, ignore_sighup=False, echo=True, preexec_fn=None, encoding=None, codec_errors='strict', dimensions=None, use_poll=False)
 
 This is a constructor. 
@@ -82,7 +82,7 @@ The child application is ready to talk. This does not interpret shell meta chara
 
 
 
-##expect()
+## expect()
 expect(pattern, timeout=-1, searchwindowsize=-1, async_=False, **kw)
 
 
@@ -93,7 +93,7 @@ EOF or TIMEOUT exceptions can be avoided by adding EOF or TIMEOUT to the pattern
 If you pass a list of patterns and more than one matches, the first match in the stream is chosen. If more than one pattern matches at that point, the leftmost in the pattern list is chosen.
 
 
-##interact()
+## interact()
 interact(escape_character='\x1d', input_filter=None, output_filter=None)[source]
 
 Gives control of the child process to the interactive user (the human at the keyboard). Keystrokes are sent to the child process, and the stdout and stderr output of the child process is printed. 
@@ -106,7 +106,7 @@ Interact will always pass input_filter and output_filter bytes. Functions need t
 The output_filter is passed on all the output from the child process and the  input_filter on the keyboard input. The input_filter is run BEFORE the check for the escape_character.
 
 
-##kill()
+## kill()
 kill(sig):
 This sends the given signal to the child application. In keeping with UNIX tradition it has a misleading name. It does not necessarily kill the child unless you send the right signal.
 
