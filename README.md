@@ -31,3 +31,8 @@ The use of the module has been demonstrated in following examples:
     WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
     ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
     OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+    
+---
+
+## Paramiko
+A Python implementation of the SSHv2 protocol. Paramiko simplifies the SSHv2 interaction with the remote device. Paramiko is only focused on SSHv2 and provides both client and server operations. Paramiko is the low-level SSH client behind the high-level automation framework Ansible for its network modules. 
