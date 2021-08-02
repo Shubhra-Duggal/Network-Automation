@@ -7,22 +7,6 @@ The [code](Code/python.py):
 #!/usr/bin/env python
 ```
 
-```python
-from __future__ import absolute_import
-from __future__ import print_function
-from __future__ import unicode_literals
-```
-
-## \_future\_
-To ensure that future statements run under releases prior to 2.1 at least yield runtime exceptions.
-### Future Statements:
-A directive to the compiler that a particular module should be compiled using syntax or semantics that will be available in a specified future release of Python where the feature becomes standard.
-The future statement is intended to ease migration to future versions of Python that introduce incompatible changes to the language.
-A future statement appears near the top of the module.
-All historical features enabled by the future statement are still recognized by Python 3- absolute_import, division, generators, generator_stop, unicode_literals, print_function, nested_scopes and with_statement.
-
-
-
 ## pexpect.spawn
 ```python
 import pexpect
