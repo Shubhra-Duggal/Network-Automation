@@ -3,9 +3,11 @@
 Start the interactive python interpreter. Capture the startup message and give the user control over the session.
 The [code](/Code/python.py):
 
+## Shebang 
 ```python
 #!/usr/bin/env python
 ```
+If there are multiple versions of python installed, /usr/bin/env ensures that the interpreter uses the first one on you environment's $PATH.
 
 ## pexpect.spawn
 ```python
