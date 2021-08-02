@@ -20,7 +20,7 @@ c.kill(1)
 print('is alive:', c.isalive())
 ```
 
-![outputPython](/Images/pythonOutput.png)
+![outputPython](/Images/pythonOuput.png)
 
 
 ## shebang 
