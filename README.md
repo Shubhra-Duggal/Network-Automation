@@ -32,3 +32,6 @@ Network automation has become a necessary aspect of Software Design Networking. 
 
 ### Paramiko
 [Paramiko](/Paramiko/paramiko.md) is a python implementation of the SSHv2 protocol. Paramiko simplifies the SSHv2 interaction with the remote device. Paramiko is only focused on SSHv2 and provides both client and server operations. Paramiko is the low-level SSH client behind the high-level automation framework Ansible for its network modules. 
+
+## Ansible
+Ansible has SSH as the transport protocol. It has a decentralised, agentless architecture. It is operated in as a push model. Earlier it was used to run as hoc commands on servers, but now is able to automate tasks using 'playbooks' that perform idempotent tasks. These playbooks are written in YAML.
