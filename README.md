@@ -4,7 +4,7 @@
 Network automation has become a necessary aspect of Software Design Networking. Leveraging this, troubleshooting and configuration of systems can be automated to reduce cost.
 
 ## SSH Connection
-Introduction to SSH and how it works and link to file of [SSH](SSH/README.md).
+Introduction to SSH and how it works and link to file of [SSH](SSH).
 
 ## Python Modules
 
