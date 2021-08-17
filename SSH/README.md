@@ -1,4 +1,4 @@
-## Secure Shell
+# Secure Shell
 
 Introduction Again.
 ## Talk about different kinds of authetication in SSH
@@ -7,15 +7,11 @@ Introduction Again.
  
  Available authentication methods are:
  1. GSSAPI-based authentication
- 2. Host-based authentication: If the machine the user logs in from is listed in /etc/hosts.equiv or /etc/shosts.equiv on the remote machine, and the user names are the same on both sides, or if the files ~/.rhosts or ~/.shosts exist in the user's home directory on the remote machine and contain a line containing the name of the client machine and the name of the user on that machine, the user is considered for login.  Additionally, the server must be able to verify the client's host key for login to be permitted. This authentication method closes security holes due to IP spoofing, DNS spoofing, and routing spoofing.
- 3. [Public key authentication](public_key_authenication.md): The scheme is based on public-key cryptography, using cryptosystems where encryption and decryption are done using separate keys, and it is unfeasible to derive the decryption key from the encryption key.  The idea is that each user creates a public/private key pair for authentication purposes. The server knows the public key, and only the user knows the private key. SSH implements public key authentication protocol automatically, using one of the DSA, ECDSA, Ed25519 or RSA algorithms.
- 4. Certificate authentication: A variation on public key authentication, where instead of a set of public/private keys, signed certificates are used.  This has the advantage that a single trusted certification authority can be used in place of many public/private keys.
- 5. Challenge-response authentication:  The server sends an arbitrary "challenge" text,
-     and prompts for a response.  Examples of challenge-response authentication include BSD Authentication
-     (see login.conf(5)) and PAM (some non-OpenBSD systems).
- 6. [Password authentication](/simple_ssh.md): ssh prompts the user for a password.  The password is
-     sent to the remote host for checking; however, since all communications are encrypted, the password
-     cannot be seen by someone listening on the network.
+ 2. Host-based authentication: If the client machine is listed in /etc/hosts.equiv or /etc/shosts.equiv on the server machine, and the client name is the same on both sides, or if the files ~/.rhosts or ~/.shosts exist in the client's home directory on the server machine and contain a line containing the client and client machine name on that server machine, the user is considered for login.  Additionally, the server must be able to verify the client's host key for login to be permitted. This closes security holes due to IP spoofing, DNS spoofing, and routing spoofing.
+ 3. [Public key authentication](public_key_authenication.md): Asymmetric keys are used to autheticatethe clients. The client generates a public-private key pair. RSA is used to implement this method of authentication. 
+ 4. Certificate authentication: A certification authority issues signed certificates for identification. It is a variation of public key authentication.
+ 5. Challenge-response authentication:  The server sends an arbitrary "challenge" text, and prompts for a response. BSD Authentication???
+ 6. [Password authentication](simple_ssh.md): The client is prompted for a password for the host.
 
 
 * SSH automatically maintains and checks a database containing identification for all hosts it has ever been used with.
@@ -32,5 +28,4 @@ Introduction Again.
 * On most systems, setting the escape character to ''none'' will also make the session transparent even if a tty is used.
 * The session terminates when the command or shell on the remote machine exits and all X11 and TCP connections have been closed.
 
-## Simple SSH Connection
 
