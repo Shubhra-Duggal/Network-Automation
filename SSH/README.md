@@ -1,6 +1,10 @@
 # Secure Shell
 
 Introduction Again.
+
+## Setup for SSH server and SSH client
+Explain what client and server signify. [Link](ssh_setup.md)
+
 ## Talk about different kinds of authetication in SSH
  The OpenSSH SSH client supports SSH protocol 2.
  
