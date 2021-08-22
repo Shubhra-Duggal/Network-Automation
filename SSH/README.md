@@ -12,7 +12,7 @@ Explain what client and server signify. [Link](ssh_setup.md)
  Available authentication methods are:
  1. GSSAPI-based authentication
  2. Host-based authentication: If the client machine is listed in /etc/hosts.equiv or /etc/shosts.equiv on the server machine, and the client name is the same on both sides, or if the files ~/.rhosts or ~/.shosts exist in the client's home directory on the server machine and contain a line containing the client and client machine name on that server machine, the user is considered for login.  Additionally, the server must be able to verify the client's host key for login to be permitted. This closes security holes due to IP spoofing, DNS spoofing, and routing spoofing.
- 3. [Public key authentication](public_key_authenication.md): Asymmetric keys are used to autheticatethe clients. The client generates a public-private key pair. RSA is used to implement this method of authentication. 
+ 3. [Public key authentication](public_key_authentication.md): Asymmetric keys are used to autheticatethe clients. The client generates a public-private key pair. RSA is used to implement this method of authentication. 
  4. Certificate authentication: A certification authority issues signed certificates for identification. It is a variation of public key authentication.
  5. Challenge-response authentication:  The server sends an arbitrary "challenge" text, and prompts for a response. BSD Authentication???
  6. [Password authentication](simple_ssh.md): The client is prompted for a password for the host.
