@@ -1,4 +1,4 @@
-# Public Key Infrastructure
+# Public Key Authentication
 
 PKI overcomes the limitations of passwords. Keys are more secure than passwords. 
 
@@ -18,5 +18,19 @@ SSH key-gen program is used. It works differently in SSH1, SSH2 and OpenSSH. Whe
 The OpenSSH version of ssh-keygen can produce either RSA or DSA keys. RSA is default. Its operation is similar to that of SSH1.  
 
 Normally, ssh-keygen performs all necessary mathematics to generate a key. It creates your local SSH directory (~/.ssh for OpenSSH) if it doesn't already exist, and stores the private and public components of the generated key there. By default, their names are identity and identity.pub (OpenSSH) or id_dsa_1024_a and id_dsa_1024_a.pub (SSH2).    
+
+![Screenshot 2021-08-17 at 1 53 16 AM](https://user-images.githubusercontent.com/42912140/130352774-6d32c2ae-e1bf-4335-9f22-65b9ddb58429.png)
+
+   
+
+### Copying the Key to Server
+
+After the key has been generated the ssh-copy-id command is used to install it as an authorised key on the server. Now, the server grants access without a password.
+
+![Screenshot 2021-08-17 at 1 53 40 AM](https://user-images.githubusercontent.com/42912140/130352802-eb70f95b-2f41-4cec-b9df-ed64fcb0f1db.png).    
+
+This logs into the server host, and copies keys to the server, and configures them to grant access by adding them to the authorized_keys file. For OpenSSH, the entry is created in the file ~/.ssh/authorized_keys.    
+Note: The private key should never be copied to another machine.   
+
 
 
