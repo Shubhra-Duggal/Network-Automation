@@ -21,7 +21,10 @@ Normally, ssh-keygen performs all necessary mathematics to generate a key. It cr
 
 ![Screenshot 2021-08-17 at 1 53 16 AM](https://user-images.githubusercontent.com/42912140/130352774-6d32c2ae-e1bf-4335-9f22-65b9ddb58429.png)
 
-   
+The public and private keys go into the ~/.ssh folder on the client machine.    
+![Screenshot 2021-08-22 at 4 55 02 PM](https://user-images.githubusercontent.com/42912140/130353315-766e0dca-dacc-4474-8682-cda2485ec6de.png)
+
+
 
 ### Copying the Key to Server
 
