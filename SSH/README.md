@@ -15,4 +15,7 @@ Explain what client and server signify. [Link](ssh_setup.md)
  3. Challenge-response authentication:  The server sends an arbitrary "challenge" text, and prompts for a response. BSD Authentication???
  4. [Password authentication](simple_ssh.md): The client is prompted for a password for the host.
 
+
+References: https://www.ssh.com
+
 --- 
