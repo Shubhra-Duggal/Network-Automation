@@ -35,5 +35,12 @@ After the key has been generated the ssh-copy-id command is used to install it a
 This logs into the server host, and copies keys to the server, and configures them to grant access by adding them to the authorized_keys file. For OpenSSH, the entry is created in the file ~/.ssh/authorized_keys.    
 Note: The private key should never be copied to another machine.   
 
+![Screenshot 2021-08-22 at 5 23 01 PM](https://user-images.githubusercontent.com/42912140/130354103-18d23e2b-f8d0-4db4-8120-d0778808ce6e.png).  
+
+Now the connection can be made without using the password to the server machine.   
+
+![Screenshot 2021-08-22 at 5 22 26 PM](https://user-images.githubusercontent.com/42912140/130354122-254d881d-e8ac-4a87-9edf-0771293c8a8d.png)
+
+
 
 
