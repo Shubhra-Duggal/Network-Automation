@@ -11,7 +11,7 @@ Explain what client and server signify. [Link](ssh_setup.md)
  
  Available authentication methods are:
  1. [Public key authentication](public_key_authentication.md): Asymmetric keys are used to autheticatethe clients. The client generates a public-private key pair. RSA is used to implement this method of authentication. 
- 2. [Password authentication](simple_ssh.md): The client is prompted for a password for the host.
+ 2. [Password authentication](ssh_setup.md): The client is prompted for a password for the host.
 
 
 References: https://www.ssh.com
