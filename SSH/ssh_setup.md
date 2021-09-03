@@ -9,7 +9,7 @@ The remote login option is enabled and the user (shubhra duggal) has been chosen
 
 ![Screenshot 2021-09-02 at 6 19 21 PM](https://user-images.githubusercontent.com/42912140/131847300-626c33c4-9577-4a3f-9cc5-dab405428403.png)       
 
-This setups the SSH server for the ansible enginer to connect to.       
+This setups the SSH server for the client machine to connect to.       
 
 ## SSH Client
 The SSH client is set up on the Linux (Ubuntu) machine. The OpenSSH client is installed on the machine.       
