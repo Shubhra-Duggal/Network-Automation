@@ -16,6 +16,9 @@ Network automation has become a necessary aspect of Software Design Networking. 
 
 [Pexpect](/Pexpect/pexpect.md) is one the python modules that is used to control other applications. It 'spawns' a child application and responds to the expected pattern of queries, like a human user would do. It can be used for SSH, FTP, Telnet, etc. by automating scripts.
 
+### Fabric
+[Fabric](Fabric/README.md) is a library and set of command line tools that execute commands on a remote server. Fabric uses an SSH connection to connect to the server and then executes commands against it. Fabric is used in composing using Python modules and executing by the Fabric command line. 
+
 
 ## Puppet
 
