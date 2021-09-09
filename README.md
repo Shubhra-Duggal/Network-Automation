@@ -4,7 +4,7 @@
 Network automation has become a necessary aspect of Software Design Networking. Leveraging this, troubleshooting and configuration of systems can be automated to reduce cost.
 
 ## DevOps
-It is a methodology introduced to bridge the gap between the developers and the operations teams. It can be levraged to overcome the bottlnecks introduced other methodologies. 
+[DevOps](DevOps) is a methodology introduced to bridge the gap between the developers and the operations teams. It can be levraged to overcome the bottlnecks introduced other methodologies. 
 
 ## SSH Connection
 [Secure Shell](SSH) is a protocol which is used to encrypt communication between client and server, and even perform authentication using public key cryptography. Implementation of SSH are available in almost all of the operating systems. Although SSH stands for Secure Shell, it is not a shell in the traditional sense of the word. It creates a tunnel to run a shell with end to end encryption between the two machines. 
